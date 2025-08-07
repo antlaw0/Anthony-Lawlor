@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anthony Lawlor | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+<body>
+  <div id="header"></div>
+
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+  </script>
+
+
+    <main class="max-w-screen-md mx-auto px-6 py-12 text-center bg-white rounded-2xl shadow-md">
+  <section class="mb-10">
+    <h1 class="text-4xl font-bold text-blue-800">Portfolio</h1>
+    <br>
+	<p>
+	This is a list of all my projects that are ready to showcase.
+	</p>
+	<br>
+	<h2> IIAP AI Study Platform </h2>
+	<br>
+	Project link:  <a href="https://iiap-ai-study-platform.onrender.com/"> https://iiap-ai-study-platform.onrender.com/ </a>
+	<br>
+	NOTE:  You might have to wait a little for Render to spin up the server as it comes out of hybernation
+	<br>
+	<p>
+	This project is a custom web app designed to enhance studying for the IIAP certification exams, WAS and CPACC in particular. The app uses an integrated AI to generate questions that may appear on a certification exam. The AI is designed to develop a working understanding of the user's knowledge of IIAP topics and adapt questions based on an analysis of their strengths and weaknesses in their knowledge areas in order to tailor questions towards their knowledge level. The app tracks number of questions that the user got correct versus questions that the user got incorrect as well of a breakdown of questions by topic so the user can tell how well their knowledge is in each knowledge area. 
+	The app should be in working order but I plan to add features as time permits. Please see the developer log for more details about the project and my process for development.
+	</p>
+	</section>
+	</main>
+	</body>
+	</html>
