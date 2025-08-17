@@ -110,3 +110,72 @@ footer {
     font-size: 1.25rem;
   }
 }
+/* Header styles */
+.site-header {
+  background-color: #0055aa; /* Professional solid color; change if desired */
+  /* Alternatively, for a background image:
+  background-image: url('static/header-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  */
+  color: #ffffff;
+  padding: 1rem 2rem;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: left; /* left-justified */
+}
+
+/* Navigation links */
+.header-nav {
+  margin-top: 0.75rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* center links horizontally */
+  gap: 2rem; /* space between links */
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  text-decoration: underline;
+}
+
+.nav-link:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 600px) {
+  .header-title {
+    font-size: 2rem;
+  }
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
