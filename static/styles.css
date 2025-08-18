@@ -103,12 +103,7 @@ footer {
 
 /* Header styles */
 .site-header {
-  background-color: #0055aa; /* Professional solid color; change if desired */
-  /* Alternatively, for a background image:
-  background-image: url('static/header-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  */
+  background-color: #0055aa; /* Professional solid color */
   color: #ffffff;
   padding: 1rem 2rem;
   width: 100%; /* Ensure full width */
@@ -116,10 +111,9 @@ footer {
 
 .header-container {
   display: flex;
-  justify-content: space-between; /* title left, nav right/center */
+  justify-content: space-between; /* title left, nav right */
   align-items: center;
-  max-width: 1200px; /* optional: keep content aligned */
-  margin: 0 auto;
+  width: 100%; /* take full width instead of max-width */
 }
 
 .header-title {
@@ -131,7 +125,7 @@ footer {
 
 /* Navigation links */
 .header-nav {
-  margin: 0;
+  margin: 0 auto; /* centers nav in available space */
 }
 
 .nav-list {
