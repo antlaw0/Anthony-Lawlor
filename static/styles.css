@@ -23,7 +23,7 @@ body {
 /* Constrain only main content, not the header/footer */
 main {
   padding: 1rem;
-  max-width: 75%;
+  max-width: none;
   margin: 0 auto;
 }
 
