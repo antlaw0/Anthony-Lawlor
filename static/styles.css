@@ -105,10 +105,13 @@ footer {
 
 /* Header styles */
 .site-header {
-  background-color: #0055aa; /* Professional solid color */
-  color: #ffffff;
-  padding: 1rem 2rem;
   width: 100%; /* Ensure full width */
+    position: sticky;
+	  top: 0;           /* distance from top when it sticks */
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  z-index: 1000;    /* make sure it stays above other content */
 }
 
 .header-container {
@@ -180,3 +183,27 @@ footer {
     gap: 1rem;
   }
 }
+
+/* Footer Styling */
+.site-footer {
+  background-color: #2c3e50;  /* dark blue/gray */
+  color: #ecf0f1;             /* light gray text */
+  padding: 20px 0;
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.site-footer .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-footer nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 
