@@ -22,9 +22,11 @@ body {
 
 /* Constrain only main content, not the header/footer */
 main {
-  padding: 1rem;
-  max-width: none;
-  margin: 0 auto;
+    width: 100%;          
+    max-width: 1200px;    /* good readable max */
+    margin: 0 auto;       /* center within the screen */
+    padding: 2rem;
+    background: #f8f9fa;
 }
 
 /* Headings */
