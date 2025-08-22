@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anthony Lawlor | Accessibility Engineer</title>
-  
+  <link rel="stylesheet" href="static/styles.css">  
 </head>
 
 
@@ -17,8 +17,28 @@
       .then(data => {
         document.getElementById('header').innerHTML = data;
       });
+	  
+	  //inject footer
+	  fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  
   </script>
-<main>
+  <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">Anthony Lawlor</h1>
+    <p class="hero-subtitle">Senior Accessibility Engineer (CPACC)</p>
+    <p class="hero-tagline">
+      Making the world more accessible through lived experience and technical expertise.
+    </p>
+    <a href="portfolio.html" class="button">View My Work</a>
+  </div>
+</section>
+
+
     <h1>Anthony Lawlor (CPACC)</h1>
     <p class="title">Senior Accessibility Engineer</p>
     <p class="tagline">
@@ -80,17 +100,10 @@
         <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></li>
         <li>GitHub: <a href="https://github.com/yourgithub">github.com/yourgithub</a></li>
       </ul>
-    </section>
+		</section>
   </main>
-
-  <footer role="contentinfo">
-    <p>&copy; <span id="year"></span> Anthony Lawlor. All rights reserved.</p>
-  </footer>
-
-  <script>
-    // auto-update footer year
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<div id="footer"></div>
+  
 </body>
 
-	</html>
+	</html>h
