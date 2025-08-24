@@ -1,45 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anthony Lawlor | Accessibility Engineer</title>
-  <link rel="stylesheet" href="static/styles.css">  
-</head>
-
-
-<body>
-  <div id="header"></div>
-
-  <script>
-    fetch('header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header').innerHTML = data;
-      });
-	  
-	  //inject footer
-	  fetch('footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer').innerHTML = data;
-      });
-  
-  </script>
-  <!-- Hero Section -->
-<section class="hero">
-  <div class="hero-content">
-    <h1 class="hero-title">Anthony Lawlor</h1>
-    <p class="hero-subtitle">Senior Accessibility Engineer (CPACC)</p>
-    <p class="hero-tagline">
-      Making the world more accessible through lived experience and technical expertise.
-    </p>
-    </div>
-</section>
-
-
-    
-  <main id="main-content" >
+---
+layout: default
+title: "Anthony Lawlor | Home page"
+---
+<main id="main-content" >
     <section >
       <h2 id="about-heading">About Me</h2>
       <p>
@@ -93,8 +56,3 @@
       </ul>
 		</section>
   </main>
-<div id="footer"></div>
-  
-</body>
-
-	</html>h
